@@ -50,7 +50,7 @@ public class Base {
 		try {
 			FIS = new FileInputStream("./src/test/resources/properties/environment.properties");
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+		
 			e.printStackTrace();
 		}
 		
@@ -59,7 +59,7 @@ public class Base {
 		try {
 			prop.load(FIS);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
