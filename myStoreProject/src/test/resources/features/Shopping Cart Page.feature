@@ -1,4 +1,3 @@
-
 Feature: Shopping Cart Page
   As a user, I want to added the product in the cart so that User can do purchase the product
 

@@ -22,7 +22,7 @@ public class Base {
 	private Properties prop;
 	private String browserProp;
 	private String url;
-	private String browserCmd;
+	private String browserCmd; 	
 	private String browser;
 	private FirefoxOptions ffOptions;
 	private ChromeOptions chromeOptions;
