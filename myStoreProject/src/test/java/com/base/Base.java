@@ -11,10 +11,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.util.concurrent.TimeUnit;
 
 public class Base {
 	private WebDriver driver;
@@ -36,7 +38,7 @@ public class Base {
 		{
 			chooseBrowserType();
 			launchBrowser();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
 			driver.get(url);	
